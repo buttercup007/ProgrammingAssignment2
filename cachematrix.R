@@ -33,7 +33,6 @@ cacheSolve <- function(x, ...) {
         return(i)
     }
     data <- x$get()
-    print(paste("Matrix: ", x, sep = ''))
     i <- solve(data, ...)
     x$setinverse(i)
     i
